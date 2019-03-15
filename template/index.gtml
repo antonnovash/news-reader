@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>Id</th><th>Title</th><th>PublishedDate</th>
+    </thead>
+    {{range . }}
+        <tr>
+            <td>{{.ID}}</td>
+            <td>{{.Title}}</td>
+            <td>{{.PublishedDate}}</td>
+        </tr>
+    {{end}}
+</table>
+</body>
+</html>
